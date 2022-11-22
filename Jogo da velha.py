@@ -11,10 +11,12 @@ def velha(tabuleiro):
     print(tabuleiro[3], ' | ', tabuleiro[4], ' | ', tabuleiro[5])
     print('- - - - - - - -')
     print(tabuleiro[6], ' | ', tabuleiro[7], ' | ', tabuleiro[8])
+    print ('\n')
 print(velha(tabuleiro))
 
 
 def VezJogador(tabuleiro):
+    print (f'A vez é do jogador: {Jogador}\n')
     entrada = int(input('Escolha um número de 1 a 9: '))
     if (entrada>=1 and entrada<=9 and tabuleiro[entrada-1] == '-'):
         tabuleiro[entrada-1] = Jogador
@@ -65,6 +67,7 @@ def VerificarVitoria():
     global Continua
     if (Diagonal(tabuleiro) or Vertical(tabuleiro) or Horizontal(tabuleiro)):
         Continua = False
+        velha(tabuleiro)
         print(f'O vencedor é o {Vencedor}')
 
 def TrocarJogador():
@@ -79,4 +82,4 @@ while Continua:
     VezJogador(tabuleiro)
     VerificarVitoria()
     Empate(tabuleiro)
-    TrocarJogador()
+    TrocarJogador()   
