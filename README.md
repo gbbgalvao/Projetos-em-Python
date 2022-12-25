@@ -1,2 +1,2 @@
 # Numpy
-Mais testes futuramente
+- Pequenos testes feitos em com a biblioteca Numpy
