@@ -1,2 +1,2 @@
-# Básico em Numpy
-Está completo :)
+# Numpy
+Mais testes futuramente
