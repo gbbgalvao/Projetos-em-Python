@@ -27,5 +27,6 @@ len() mede o tamanho de uma lista
 .copy() copia uma lista
 
 ARRAY EM NUMPY SUPORTA APENAS 1 TIPO DE DADO POR VEZ
+EX: Somente int, somente string, etc.
 '''
 
